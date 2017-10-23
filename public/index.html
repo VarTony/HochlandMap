@@ -1,0 +1,587 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="index.css">
+    <title>Hochland locations</title>
+  </head>
+  <body>
+     <div id = "container">
+       <h1 id = 'title'>География компании Hochland</h1>
+       <div id="header">
+      <ul>
+        <li id = 'EUROPE' onclick = "europeSelect()">Европа</li>
+        <li id = "USA" onclick = "USASelect()";>Северная Америка</li>
+        <li id = 'AUSTRALIA' onclick = "australiaSelect()";>Австралия</li>
+      </ul>
+
+       </div>
+       <div id = "land1">
+      <div id = "map1" class = "maps">
+        <table class = 'navigation'>
+          <tbody>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td class = "course" onclick="russiaSelect()" ></td>
+         <td class = "course" onclick="russiaSelect()" ></td>
+       </tr>
+       <!-- onclick="russiaSelect()" -->
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td></td>
+         <td class = "course" onclick="russiaSelect()" ></td>
+         <td class = "course" onclick="russiaSelect()" >
+          <img src="images/factory.png" class = "minFactory" />
+         </td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td class = "course" onclick="russiaSelect()" >
+          <img src="images/factory.png" class = "minFactory" />
+         </td>
+         <td class = "course" onclick="russiaSelect()" ></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td class = "course" onclick="russiaSelect()"></td>
+         <td class = "course" onclick="russiaSelect()">
+          <h5 class = 'name' style = "color: white">Россия</h5>
+         </td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td class = 'course' onclick="germanySelect()" >
+           <h5 class = 'name' >Германия</h5>
+         <img src="images/factory.png" class = "minFactory" style=" margin-top: 12px;"  />
+         </td>
+         <td class = 'course' onclick="polandSelect()">
+           <img src="images/factory.png" class = "minFactory" />
+           <img src="images/factory.png" class = "minFactory" />
+         </td>
+         <td></td>
+         <td  class = "course" onclick="russiaSelect()"></td>
+       </tr>
+       <tr>
+         <td ></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td class = 'course' onclick="franceSelect()"></td>
+         <td class = 'course' onclick="germanySelect()">
+
+         </td>
+         <td class = 'course' onclick="germanySelect()" >
+            <img src="images/factory.png" class = "minFactory" />
+             <img src="images/factory.png" class = "minFactory" style="margin-left: 1px;"/>
+         </td>
+         <td class = 'course' onclick="polandSelect()">
+            <h5 class = 'name' style = "color: white" >Польша</h5>
+         </td>
+         <td ></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><h5 class = 'name' >Франция</h5></td>
+         <td class = 'course' onclick="franceSelect()"></td>
+         <td class = 'course' onclick="franceSelect()">
+        <img src="images/factory.png" class = "minFactory" style="float: left" />
+         </td>
+         <td ></td>
+         <td><h5 class = 'name'style = "margin-right: 30px" >Румыния</h5></td>
+         <td class = 'course' onclick="romaniaSelect()">
+              <img src="images/factory.png" class = "minFactory" />
+              <img src="images/factory.png" class = "minFactory" style = "margin-left: 5px" />
+                  <img src="images/factory.png" class = "minFactory" />
+         </td>
+         <td class = 'course' onclick="romaniaSelect()">
+
+         </td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="spainSelect()">
+
+         </td>
+         <td class = 'course' onclick="spainSelect()">
+         <img src="images/factory.png" class = "minFactory" />
+         </td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td><h5 class = 'name' style="margin-lef: 15px"  >Испания</h5></td>
+         <td class = 'course' onclick="spainSelect()"></td>
+         <td class = 'course' onclick="spainSelect()"></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+<!-- h9 w10 -->
+          </tbody>
+        </table>
+
+
+
+      </div>
+      <div id = "factory1" class = 'industry'>
+        <!-- <div id="RUSSIA"> -->
+          <div id = "Rfacoty1" class="factories">
+            <div class = 'titleCountry'>
+            <img src="./images/flags/RussiaFlag.png" class = "flagCountry" />
+            <h2 class = 'NameCountry'>Россия</h2>
+            </div>
+            <img src="images/factories/Russia1.jpg" class='photoFactory'>
+            <h2 class = 'factoryText'>РАОС</h2>
+            </div>
+
+            <div id = "Rfacoty2" class="factories">
+              <div class = 'titleCountry'>
+              <img src="./images/flags/RussiaFlag.png" class = "flagCountry" />
+              <h2 class = 'NameCountry'>Россия</h2>
+              </div>
+            <img src="images/factories/Russia2.jpg" class='photoFactory'>
+            <h2 class = 'factoryText'>Прохоровка</h2>
+             </div>
+
+            <div id = "Pfacoty1" class="factories">
+              <div class = 'titleCountry'>
+              <img src="./images/flags/PolandFlag.png" class = "flagCountry" />
+              <h2 class = 'NameCountry'>Польша</h2>
+              </div>
+              <img src="images/factories/Poland1.jpg" class='photoFactory'>
+              <h2 class = 'factoryText'>Казмирш</h2>
+              </div>
+              <div id = "Pfacoty2" class="factories">
+                <div class = 'titleCountry'>
+                <img src="./images/flags/PolandFlag.png" class = "flagCountry" />
+                <h2 class = 'NameCountry'>Польша</h2>
+                </div>
+              <img src="images/factories/Poland2.jpg" class='photoFactory'>
+              <h2 class = 'factoryText'>Бараново</h2>
+              </div>
+
+              <div id = "Gfacoty1" class="factories">
+                <div class = 'titleCountry'>
+                <img src="./images/flags/GermanyFlag.png" class = "flagCountry" />
+                <h2 class = 'NameCountry'>Германия</h2>
+                </div>
+                <img src="images/factories/Germany1.jpg" class='photoFactory'>
+                <h2 class = 'factoryText'>Хайменкирх</h2>
+                </div>
+                <div id = "Gfacoty2" class="factories">
+                  <div class = 'titleCountry'>
+                  <img src="./images/flags/GermanyFlag.png" class = "flagCountry" />
+                  <h2 class = 'NameCountry'>Германия</h2>
+                  </div>
+                <img src="images/factories/Germany2.png" class='photoFactory'>
+                <h2 class = 'factoryText'>Дортмунд</h2>
+                </div>
+                <div id = "Gfacoty3" class="factories">
+                  <div class = 'titleCountry'>
+                  <img src="./images/flags/GermanyFlag.png" class = "flagCountry" />
+                  <h2 class = 'NameCountry'>Германия</h2>
+                  </div>
+                  <img src="images/factories/Germany3.png" class='photoFactory'>
+                  <h2 class = 'factoryText'>Кобленц</h2>
+                  </div>
+
+                  <div id = "Ffacoty1" class="factories">
+                    <div class = 'titleCountry'>
+                    <img src="./images/flags/FranceFlag.png" class = "flagCountry" />
+                    <h2 class = 'NameCountry'>Франция</h2>
+                    </div>
+                  <img src="images/factories/France1.jpg" class='photoFactory'>
+                  <h2 class = 'factoryText'>Лотарингия</h2>
+                  </div>
+                  <div id = "Sfacoty1" class="factories">
+                    <div class = 'titleCountry'>
+                    <img src="./images/flags/SpainFlag.png" class = "flagCountry" />
+                    <h2 class = 'NameCountry'>Испания</h2>
+                    </div>
+                  <img src="images/factories/Spain1.jpg" class='photoFactory'>
+                  <h2 class = 'factoryText'>Барселона</h2>
+                  </div>
+
+                  <div id = "Rofacoty1" class="factories">
+                    <div class = 'titleCountry'>
+                    <img src="./images/flags/RomaniaFlag.png" class = "flagCountry" />
+                    <h2 class = 'NameCountry'>Румыния</h2>
+                    </div>
+                    <img src="images/factories/Romania1.jpg" class='photoFactory'>
+                    <h2 class = 'factoryText'>Сигишоаг</h2>
+                    </div>
+                    <div id = "Rofacoty2" class="factories">
+                      <div class = 'titleCountry'>
+                      <img src="./images/flags/RomaniaFlag.png" class = "flagCountry" />
+                      <h2 class = 'NameCountry'>Румыния</h2>
+                      </div>
+                    <img src="images/factories/Romania2.jpg" class='photoFactory'>
+                    <h2 class = 'factoryText'>Соват</h2>
+                      </div>
+
+                    <div id = "Rofacoty3" class="factories">
+                      <div class = 'titleCountry'>
+                      <img src="./images/flags/RomaniaFlag.png" class = "flagCountry" />
+                      <h2 class = 'NameCountry'>Румыния</h2>
+                      </div>
+                      <img src="images/factories/Romania3.jpg" class='photoFactory'>
+                      <h2 class = 'factoryText'>Бухарест</h2>
+          </div>
+        </div>
+       </div>
+
+
+
+       <div id = "land2">
+      <div id = "map2" class = "maps">
+        <table class = 'navigation'>
+          <tbody>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td  ></td>
+       </tr>
+
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="wisconsinSelect()" ></td>
+         <td  class = 'course' onclick="wisconsinSelect()"></td>
+         <td></td>
+         <td class = 'course' onclick="vermontSelect()"></td>
+         <td class = 'course' onclick="vermontSelect()"></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="wisconsinSelect()"></td>
+         <td class = 'course' onclick=" newJerseySelect()"></td>
+         <td class = 'course' onclick=" newJerseySelect()" ></td>
+         <td ></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="wisconsinSelect()"></td>
+         <td></td>
+         <td class = 'course' onclick=" newJerseySelect()" ></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td class = 'course' onclick="arizonaSelect()"></td>
+         <td class = 'course' onclick="arizonaSelect()" ></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+       </tr>
+       <tr>
+         <td class = 'course' onclick="arizonaSelect()"></td>
+         <td class = 'course' onclick="arizonaSelect()"></td>
+         <td class = 'course' onclick="arizonaSelect()"></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="floridaSelect()"></td>
+         <td class = 'course' onclick="floridaSelect()"></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td class = 'course' onclick="floridaSelect()" ></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+      <div id = "factory2" class = 'industry'>
+        <div id = "Afacoty" class="factories">
+          <div class = 'titleCountry'>
+          <img src="./images/flags/USAFlag.png" class = "flagCountry" />
+          <h2 class = 'NameCountry'>США</h2>
+          </div>
+          <img src="images/factories/USAari.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Аризона</h2>
+          </div>
+          <div id = "Ffacoty" class="factories">
+            <div class = 'titleCountry'>
+            <img src="./images/flags/USAFlag.png" class = "flagCountry" />
+            <h2 class = 'NameCountry'>США</h2>
+            </div>
+          <img src="images/factories/USAFlorida.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Флорида</h2>
+          </div>
+          <div id = "Nfacoty" class="factories">
+            <div class = 'titleCountry'>
+            <img src="./images/flags/USAFlag.png" class = "flagCountry" />
+            <h2 class = 'NameCountry'>США</h2>
+            </div>
+          <img src="images/factories/USAJersey.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Нью-джерси</h2>
+          </div>
+          <div id = "Wfacoty" class="factories">
+            <div class = 'titleCountry'>
+            <img src="./images/flags/USAFlag.png" class = "flagCountry" />
+            <h2 class = 'NameCountry'>США</h2>
+            </div>
+          <img src="images/factories/USAwisk.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Висконсин</h2>
+          </div>
+          <div id = "Vfacoty" class="factories">
+            <div class = 'titleCountry'>
+            <img src="./images/flags/USAFlag.png" class = "flagCountry" />
+            <h2 class = 'NameCountry'>США</h2>
+            </div>
+          <img src="images/factories/USAvert.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Вермонт</h2>
+          </div>
+       </div>
+     </div>
+
+
+
+
+     <div id = "land3">
+    <div id = "map3" class = "maps">
+
+      <table class = 'navigation'>
+        <tbody>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td ></td>
+       <td></td>
+       <td ></td>
+       <td ></td>
+       <td ></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td class = 'course' onclick="MelbourneSelect()"></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td ></td>
+       <td></td>
+       <td class = 'course' onclick="MelbourneSelect()"></td>
+       <td class = 'course' onclick="MelbourneSelect()"></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+
+
+        </tbody>
+      </table>
+
+    </div>
+    <div id = "factory3" class = 'industry'>
+      <!-- <div id="RUSSIA"> -->
+        <div id = "Mfactory" class="factories">
+          <div class = 'titleCountry'>
+          <img src="./images/flags/AustraliaFlag.png" class = "flagCountry" />
+          <h2 class = 'NameCountry'>Австрания</h2>
+          </div>
+          <img src="images/factories/melbrun.jpg" class='photoFactory'>
+          <h2 class = 'factoryText'>Мельбурн</h2>
+          </div>
+
+    </div>
+     </div>
+
+
+     </div>
+<script src = 'javascripts/index.js'></script>
+<script src = 'javascripts/indexEurope.js'></script>
+<script src = 'javascripts/indexUSA.js'></script>
+<script src = 'javascripts/indexAustralia.js'></script>
+  </body>
+</html>
